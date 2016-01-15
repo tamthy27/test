@@ -1,0 +1,41 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.List;
+
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+
+public class ReadfileUtil {
+
+	public static List<String> readExcel (String filename)
+	{
+		if(filename!=null&&!filename.isEmpty())
+		{
+			File file = new File(filename);
+			if(file.canRead())
+			{
+				try {
+					FileInputStream input = new FileInputStream(file);
+					HSSFWorkbook hssfWorkbook = new HSSFWorkbook(input);
+					if(hssfWorkbook!=null)
+					{
+						HSSFSheet sheet =  hssfWorkbook.getSheet(0;
+						
+					}
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+		}
+		
+		return null;
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Readfile&apos; to &apos;ReadfileUtil&apos;&#x0D;&#x0A;- Original project: &apos;ReadExcel&apos;&#x0D;&#x0A;- Original element: &apos;Readfile&apos;&#x0D;&#x0A;- Renamed element: &apos;ReadfileUtil&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Readfile&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Readfile.java[Readfile" matchStrategy="1" name="ReadfileUtil" qualified="false" references="true" similarDeclarations="true" stamp="1452780427574" textual="false" version="1.0"/>
+</session>
