@@ -2,6 +2,11 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
-	<classpathentry kind="lib" path="C:/Users/VA/Desktop/JavaCanBan/poi-3.9.jar/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VA/Desktop/JavaCanBan/poi-3.13/poi-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="lib/poi-examples-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="lib/poi-excelant-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="lib/poi-scratchpad-3.13-20150929.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
