@@ -63,7 +63,7 @@ public class ReadfileUtil {
 				possheet += Integer.parseInt(String.valueOf(a[1].charAt(i)));
 
 			}
-			this.sheet = workbook.getSheetAt(possheet);
+			this.sheet = (HSSFSheet) workbook.getSheetAt(possheet);
 			if (sheet != null && sheet.getLastRowNum() > 0) {
 				int posrow = 0;
 				Integer poscell = 0;

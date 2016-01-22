@@ -5,18 +5,18 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-//import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
+//import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadfileUtil {
 
 	private Workbook workbook;
-	private Sheet sheet;
+	private HSSFSheet sheet;
 
 	public Workbook getWorkbook() {
 		return workbook;
@@ -31,7 +31,7 @@ public class ReadfileUtil {
 			File file = new File(filename);
 			if (file.canRead()) {
 				try {
-					FileInputStream fileInput = new FileInputStream(file);
+					InputStream fileInput = new FileInputStream(file);
 					String[] a = filename.split("\\.");
 					String string = a[a.length - 1];
 					if (string.equals("xls")) {
@@ -63,7 +63,7 @@ public class ReadfileUtil {
 				possheet += Integer.parseInt(String.valueOf(a[1].charAt(i)));
 
 			}
-			this.sheet = workbook.getSheetAt(possheet);
+			this.sheet = (HSSFSheet) workbook.getSheetAt(possheet);
 			if (sheet != null && sheet.getLastRowNum() > 0) {
 				int posrow = 0;
 				Integer poscell = 0;
@@ -96,12 +96,12 @@ public class ReadfileUtil {
 			}
 
 		}
-		try {
-			workbook.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			//workbook.close();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		return "nothing";
 	}
 
