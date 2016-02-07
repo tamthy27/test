@@ -51,6 +51,10 @@ public class ReadfileUtil {
 		}
 	}
 
+	public ReadfileUtil() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String Readfile(String pos) {
 		// TODO Auto-generated method stub
 		String[] a = pos.split("!");
@@ -106,3 +110,5 @@ public class ReadfileUtil {
 	}
 
 }
+
+
